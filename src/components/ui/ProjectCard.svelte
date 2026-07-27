@@ -12,11 +12,19 @@
     if (compact) return;
     const card = e.currentTarget as HTMLElement;
     const rect = card.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 10;
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -10;
-    card.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg) scale(1.02)`;
-    card.style.borderColor = 'rgba(0,191,255,0.4)';
+    // Increase multiplier for a more dramatic "cinematic" tilt
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 15;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -15;
+    
+    // Add glare effect by updating a CSS variable that we will use in the background
+    const glareX = ((e.clientX - rect.left) / rect.width) * 100;
+    const glareY = ((e.clientY - rect.top) / rect.height) * 100;
+    
+    card.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg) scale(1.03)`;
+    card.style.borderColor = 'rgba(0,191,255,0.5)';
     card.style.boxShadow = '0 0 40px rgba(0,191,255,0.2), 0 20px 60px rgba(0,0,0,0.5)';
+    card.style.setProperty('--glare-x', `${glareX}%`);
+    card.style.setProperty('--glare-y', `${glareY}%`);
   }
 
   function resetTilt(e: MouseEvent) {
@@ -25,11 +33,13 @@
     card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
     card.style.borderColor = 'var(--c-border)';
     card.style.boxShadow = 'none';
+    card.style.removeProperty('--glare-x');
+    card.style.removeProperty('--glare-y');
   }
 </script>
 
 <div 
-  class="relative overflow-hidden {compact ? 'p-5' : 'min-h-[420px] grid lg:grid-cols-[1.05fr_0.95fr] gap-0 p-0'}"
+  class="group relative overflow-hidden {compact ? 'p-5' : 'min-h-[420px] grid lg:grid-cols-[1.05fr_0.95fr] gap-0 p-0'}"
   on:mousemove={handleTilt}
   on:mouseleave={resetTilt}
   style="
@@ -40,8 +50,13 @@
     will-change: transform;
   "
 >
+  <!-- Cinematic Glare Effect -->
+  <div class="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="
+    background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255,255,255,0.08) 0%, transparent 60%);
+  "></div>
+
   {#if !compact}
-    <div aria-hidden="true" class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[rgba(0,191,255,0.15)] via-[rgba(0,191,255,0.05)] to-transparent" />
+    <div aria-hidden="true" class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[rgba(0,191,255,0.15)] via-[rgba(0,191,255,0.05)] to-transparent z-0" />
   {/if}
   
   <div class={compact ? "" : "flex flex-col p-6 sm:p-8 relative z-10"}>

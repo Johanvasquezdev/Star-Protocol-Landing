@@ -4,13 +4,35 @@
 
   let rotation = 0;
   let scrollY = 0;
+  let pointerX = 0;
+  let pointerY = 0;
+  
+  // Smoothly interpolate current pointer rotation for cinematic feel
+  let targetRotationX = 0;
+  let targetRotationY = 0;
+  let currentRotationX = 0;
+  let currentRotationY = 0;
   
   useTask((delta) => {
     rotation += delta;
+    
+    // Smooth interpolation (lerp) for mouse tracking
+    currentRotationX += (targetRotationX - currentRotationX) * delta * 5;
+    currentRotationY += (targetRotationY - currentRotationY) * delta * 5;
   });
+
+  function onPointerMove(e) {
+    // Normalize coordinates between -1 and 1
+    pointerX = (e.clientX / window.innerWidth) * 2 - 1;
+    pointerY = -(e.clientY / window.innerHeight) * 2 + 1;
+    
+    // Set target rotation (max tilt of ~15 degrees)
+    targetRotationY = pointerX * 0.25;
+    targetRotationX = -pointerY * 0.25;
+  }
 </script>
 
-<svelte:window bind:scrollY={scrollY} />
+<svelte:window bind:scrollY={scrollY} on:mousemove={onPointerMove} />
 
 <!-- Camera moves forward (negative Z) and slightly down based on scroll -->
 <T.PerspectiveCamera 
@@ -39,29 +61,32 @@
 />
 
 <Float speed={2} rotationIntensity={0.5} floatIntensity={1.5}>
-  <!-- Core Cyberpunk geometric object (Planet) -->
-  <T.Mesh rotation.x={rotation * 0.1} rotation.y={rotation * 0.2}>
-    <T.SphereGeometry args={[1.5, 32, 32]} />
-    <T.MeshStandardMaterial color="#0a0a0a" roughness={0.1} metalness={0.9} />
-  </T.Mesh>
-  
-  <!-- Holographic Grid / Wireframe -->
-  <T.Mesh rotation.x={rotation * 0.1} rotation.y={rotation * 0.2}>
-    <T.SphereGeometry args={[1.51, 16, 16]} />
-    <T.MeshBasicMaterial color="#25d6ff" wireframe={true} transparent opacity={0.6} />
-  </T.Mesh>
+  <!-- Group that tilts towards mouse -->
+  <T.Group rotation.x={currentRotationX} rotation.y={currentRotationY}>
+    <!-- Core Cyberpunk geometric object (Planet) -->
+    <T.Mesh rotation.x={rotation * 0.1} rotation.y={rotation * 0.2}>
+      <T.SphereGeometry args={[1.5, 32, 32]} />
+      <T.MeshStandardMaterial color="#0a0a0a" roughness={0.1} metalness={0.9} />
+    </T.Mesh>
+    
+    <!-- Holographic Grid / Wireframe -->
+    <T.Mesh rotation.x={rotation * 0.1} rotation.y={rotation * 0.2}>
+      <T.SphereGeometry args={[1.51, 16, 16]} />
+      <T.MeshBasicMaterial color="#25d6ff" wireframe={true} transparent opacity={0.6} />
+    </T.Mesh>
 
-  <!-- Orbital Ring 1 -->
-  <T.Mesh rotation.x={Math.PI / 2 + 0.2} rotation.y={rotation * -0.5}>
-    <T.TorusGeometry args={[2.5, 0.02, 32, 100]} />
-    <T.MeshBasicMaterial color="#e244ff" transparent opacity={0.8} />
-  </T.Mesh>
-  
-  <!-- Orbital Ring 2 -->
-  <T.Mesh rotation.x={Math.PI / 2 - 0.4} rotation.y={rotation * 0.8}>
-    <T.TorusGeometry args={[3.2, 0.01, 32, 100]} />
-    <T.MeshBasicMaterial color="#25d6ff" transparent opacity={0.5} />
-  </T.Mesh>
+    <!-- Orbital Ring 1 -->
+    <T.Mesh rotation.x={Math.PI / 2 + 0.2} rotation.y={rotation * -0.5}>
+      <T.TorusGeometry args={[2.5, 0.02, 32, 100]} />
+      <T.MeshBasicMaterial color="#e244ff" transparent opacity={0.8} />
+    </T.Mesh>
+    
+    <!-- Orbital Ring 2 -->
+    <T.Mesh rotation.x={Math.PI / 2 - 0.4} rotation.y={rotation * 0.8}>
+      <T.TorusGeometry args={[3.2, 0.01, 32, 100]} />
+      <T.MeshBasicMaterial color="#25d6ff" transparent opacity={0.5} />
+    </T.Mesh>
+  </T.Group>
 </Float>
 
 <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.3} maxPolarAngle={Math.PI / 2} />
