@@ -21,8 +21,8 @@
     const glareY = ((e.clientY - rect.top) / rect.height) * 100;
     
     card.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg) scale(1.03)`;
-    card.style.borderColor = 'rgba(0,191,255,0.5)';
-    card.style.boxShadow = '0 0 40px rgba(0,191,255,0.2), 0 20px 60px rgba(0,0,0,0.5)';
+    card.style.borderColor = 'rgba(255,255,255,0.15)'; // Softer, more premium hover border
+    card.style.boxShadow = 'var(--glow-card), 0 0 40px rgba(0,191,255,0.15)';
     card.style.setProperty('--glare-x', `${glareX}%`);
     card.style.setProperty('--glare-y', `${glareY}%`);
   }
@@ -31,20 +31,18 @@
     if (compact) return;
     const card = e.currentTarget as HTMLElement;
     card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-    card.style.borderColor = 'var(--c-border)';
-    card.style.boxShadow = 'none';
+    card.style.borderColor = 'rgba(255,255,255,0.05)';
+    card.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.3)';
     card.style.removeProperty('--glare-x');
     card.style.removeProperty('--glare-y');
   }
 </script>
 
 <div 
-  class="group relative overflow-hidden {compact ? 'p-5' : 'min-h-[420px] grid lg:grid-cols-[1.05fr_0.95fr] gap-0 p-0'}"
+  class="group glass-panel relative overflow-hidden {compact ? 'p-5' : 'min-h-[420px] grid lg:grid-cols-[1.05fr_0.95fr] gap-0 p-0'}"
   on:mousemove={handleTilt}
   on:mouseleave={resetTilt}
   style="
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
     border-radius: 20px;
     transition: transform 0.1s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;

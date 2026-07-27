@@ -34,9 +34,9 @@
   --c-muted: var(--color-muted);
   --c-overline: var(--color-overline);
   
-  /* Effects */
-  --glow-fire: 0 0 40px rgba(0,191,255,0.3), 0 0 80px rgba(0,102,255,0.15);
-  --glow-card: 0 0 0 1px rgba(0,191,255,0.15), 0 20px 60px rgba(0,0,0,0.5);
+  /* Effects - Softer, more volumetric glows for a premium feel */
+  --glow-fire: 0 0 40px rgba(0,191,255,0.15), 0 0 100px rgba(0,102,255,0.1);
+  --glow-card: 0 0 0 1px rgba(255,255,255,0.05), 0 20px 60px rgba(0,0,0,0.6);
 }
 
 @layer base {
@@ -90,5 +90,14 @@
   .section-title {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
+  }
+  
+  /* Premium High-End Glassmorphism */
+  .glass-panel {
+    background: rgba(13, 18, 32, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.02);
   }
 }

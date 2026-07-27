@@ -26,7 +26,7 @@
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {#each certsData as cert, i}
             <div 
-              class="bg-[#0b101e] border border-white/5 rounded-2xl p-4 flex flex-col hover:border-white/20 transition-colors group"
+              class="glass-panel rounded-2xl p-4 flex flex-col hover:border-white/20 transition-all duration-300 hover:scale-[1.02] group"
               in:fly={{ y: 30, duration: 600, delay: 200 + (i * 100) }}
             >
               <!-- Card Image / Icon Placeholder -->
