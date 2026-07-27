@@ -32,13 +32,17 @@
               <!-- Card Image / Icon Placeholder -->
               <div class="w-full aspect-square rounded-xl bg-gradient-to-br {cert.color} p-1 mb-4 flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity">
                 <div class="w-full h-full bg-[#0b101e] rounded-lg flex items-center justify-center relative overflow-hidden">
-                  <!-- Decorative waves -->
-                  {#if cert.provider === "CISCO"}
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-500/20"></div>
+                  {#if cert.image}
+                    <img src={cert.image} alt={cert.title} class="w-full h-full object-cover z-10 p-2" />
                   {:else}
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-red-500/20"></div>
+                    <!-- Decorative waves -->
+                    {#if cert.provider === "CISCO"}
+                      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-500/20"></div>
+                    {:else}
+                      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-red-500/20"></div>
+                    {/if}
+                    <span class="text-3xl font-black text-white/90 tracking-tighter z-10">{cert.short}</span>
                   {/if}
-                  <span class="text-3xl font-black text-white/90 tracking-tighter z-10">{cert.short}</span>
                 </div>
               </div>
 
