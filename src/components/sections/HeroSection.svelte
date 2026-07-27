@@ -141,7 +141,7 @@
       ">
         {t.contactMe}
       </a>
-      <a href="/Johan-Gabriel-Vasquez-CV.pdf" target="_blank" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:border-white/30 flex items-center gap-2" style="
+      <a href={locale === 'en' ? "/cv-en.pdf" : "/cv-es.pdf"} target="_blank" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:border-white/30 flex items-center gap-2" style="
         font-family: 'Outfit', sans-serif;
         font-weight: 700;
         color: var(--c-text);

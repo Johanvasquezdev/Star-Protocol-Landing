@@ -141,7 +141,7 @@
             ">
               <Send size={18} /> {t.send}
             </a>
-            <a href="/Johan-Gabriel-Vasquez-CV.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm transition hover:scale-105" style="
+            <a href={locale === 'en' ? "/cv-en.pdf" : "/cv-es.pdf"} target="_blank" class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm transition hover:scale-105" style="
               background: rgba(0,191,255,0.05);
               border: 1px solid rgba(0,191,255,0.3);
               color: var(--c-fire);
