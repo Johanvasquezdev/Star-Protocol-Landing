@@ -8,6 +8,12 @@
 
   export let locale: 'en' | 'es' = 'en';
   $: t = translations[locale];
+
+  let name = '';
+  let email = '';
+  let project = '';
+
+  $: mailtoLink = `mailto:johanvasquezdev3@gmail.com?subject=Contact%20from%20${encodeURIComponent(name || 'Website')}&body=${encodeURIComponent(project + '\n\nFrom: ' + name + '\nEmail: ' + email)}`;
 </script>
 
 <section id="contact" class="relative z-10 px-5 sm:px-6">
@@ -76,6 +82,7 @@
               <input 
                 id="contact-name" 
                 name="name" 
+                bind:value={name}
                 class="rounded-xl border px-5 py-4 text-white outline-none transition placeholder:text-white/30"
                 style="
                   background: rgba(0,0,0,0.3);
@@ -96,6 +103,7 @@
                 id="contact-email" 
                 name="email" 
                 type="email" 
+                bind:value={email}
                 class="rounded-xl border px-5 py-4 text-white outline-none transition placeholder:text-white/30"
                 style="
                   background: rgba(0,0,0,0.3);
@@ -117,6 +125,7 @@
             <textarea 
               id="contact-project" 
               name="project" 
+              bind:value={project}
               class="min-h-[160px] rounded-xl border px-5 py-4 text-white outline-none transition placeholder:text-white/30 resize-none"
               style="
                 background: rgba(0,0,0,0.3);
@@ -130,7 +139,7 @@
           </div>
           
           <div class="mt-4 flex flex-wrap gap-4">
-            <a href="mailto:johanvasquezdev3@gmail.com" class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm transition hover:scale-105" style="
+            <a href={mailtoLink} class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm transition hover:scale-105" style="
               background: var(--c-fire);
               color: #000;
               font-family: 'Outfit', sans-serif;
