@@ -60,8 +60,8 @@ export const translations = {
   },
   es: {
     nav: ["Inicio", "Perfil", "Stack", "Proyectos", "Contacto"],
-    heroTitle: "Ingenieria full-stack con pulso cinematografico.",
-    heroSubtitle: "Diseno y construyo plataformas web pulidas, sistemas con IA, APIs, bases de datos y arquitectura lista para cloud con foco en claridad, confiabilidad y calidad de lanzamiento.",
+    heroTitle: "Ingeniería full-stack de alto impacto.",
+    heroSubtitle: "Diseño y construyo plataformas web pulidas, sistemas con IA, APIs, bases de datos y arquitectura lista para cloud con foco en claridad, confiabilidad y calidad de lanzamiento.",
     viewProjects: "Ver Proyectos",
     contactMe: "Contáctame",
     github: "GitHub",
