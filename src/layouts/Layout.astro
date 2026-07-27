@@ -1,0 +1,46 @@
+---
+import '../styles/globals.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Johan Gabriel Vasquez - Full-stack product engineer" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/icon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Outfit:wght@300..900&family=Syne:wght@400..800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body class="overflow-x-hidden">
+		<slot />
+		
+		<script>
+			import Lenis from 'lenis';
+			import { initScrollAnimations } from '../lib/scroll-animations';
+			
+			// Initialize Lenis smooth scroll
+			const lenis = new Lenis({
+				duration: 1.4,
+				easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+			});
+			
+			function raf(time) {
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
+			
+			requestAnimationFrame(raf);
+
+			document.addEventListener('DOMContentLoaded', initScrollAnimations);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #03050A;
+  --color-space: #080C14;
+  --color-surface: #0D1220;
+  --color-border: rgba(255,255,255,0.07);
+  --color-fire: #00BFFF;
+  --color-fire-glow: #0066FF;
+  --color-violet: #7C3AED;
+  --color-magenta: #E040FB;
+  
+  --color-text-main: #F0F4FF;
+  --color-muted: rgba(200,210,240,0.5);
+  --color-overline: rgba(0,191,255,0.7);
+}
+
+:root {
+  color-scheme: dark;
+  /* Core palette */
+  --c-void: var(--color-void);
+  --c-space: var(--color-space);
+  --c-surface: var(--color-surface);
+  --c-border: var(--color-border);
+  
+  /* Star blue fire accents */
+  --c-fire: var(--color-fire);
+  --c-fire-glow: var(--color-fire-glow);
+  --c-violet: var(--color-violet);
+  --c-magenta: var(--color-magenta);
+  
+  /* Typography */
+  --c-text: var(--color-text-main);
+  --c-muted: var(--color-muted);
+  --c-overline: var(--color-overline);
+  
+  /* Effects */
+  --glow-fire: 0 0 40px rgba(0,191,255,0.3), 0 0 80px rgba(0,102,255,0.15);
+  --glow-card: 0 0 0 1px rgba(0,191,255,0.15), 0 20px 60px rgba(0,0,0,0.5);
+}
+
+@layer base {
+  *, *::before, *::after { 
+    box-sizing: border-box; 
+  }
+
+  html { 
+    scroll-behavior: auto; /* Lenis handles this */
+  }
+
+  body {
+    background-color: var(--c-void);
+    color: var(--c-text);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .text-fire { color: var(--c-fire); }
+  .text-gradient-fire {
+    background: linear-gradient(90deg, var(--c-fire), #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  section { padding-block: clamp(5rem, 10vw, 9rem); }
+
+  .section-overline {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--c-fire);
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/layout/Navbar.svelte';
+import GlobalBackground from '../components/layout/GlobalBackground.svelte';
+import HeroSection from '../components/sections/HeroSection.svelte';
+import AboutSection from '../components/sections/AboutSection.svelte';
+import CertificationsSection from '../components/sections/CertificationsSection.svelte';
+import TechStackSection from '../components/sections/TechStackSection.svelte';
+import ProjectsSection from '../components/sections/ProjectsSection.svelte';
+import ContactSection from '../components/sections/ContactSection.svelte';
+import Footer from '../components/layout/Footer.svelte';
+
+const locale = 'es';
+---
+
+<Layout title="Johan Gabriel Vasquez | Product Engineering">
+	<GlobalBackground client:only="svelte" />
+	<Navbar client:load locale={locale} />
+	<main>
+		<HeroSection client:load locale={locale} />
+		<AboutSection client:visible locale={locale} />
+		<CertificationsSection client:visible locale={locale} />
+		<TechStackSection client:visible locale={locale} />
+		<ProjectsSection client:visible locale={locale} />
+		<ContactSection client:visible locale={locale} />
+	</main>
+	<Footer client:visible locale={locale} />
+</Layout>

@@ -1,0 +1,12 @@
+import type { TimelineItem } from "@/types";
+
+export const experienceItems: TimelineItem[] = [
+  { title: { en: "Software Development Studies", es: "Estudios de desarrollo de software" }, description: { en: "Foundation in programming, databases, OOP, analysis, and applied software construction.", es: "Base en programacion, bases de datos, OOP, analisis y construccion de software aplicada." } },
+  { title: { en: "Full-Stack Learning Path", es: "Ruta Full-Stack" }, description: { en: "Frontend, backend, APIs, authentication, databases, and product architecture.", es: "Frontend, backend, APIs, autenticacion, bases de datos y arquitectura de producto." } },
+  { title: { en: "Web Development Projects", es: "Proyectos web" }, description: { en: "Modern web interfaces, responsive layouts, dashboards, landing pages, and business tools.", es: "Interfaces web modernas, layouts responsive, dashboards, landing pages y herramientas de negocio." } },
+  { title: { en: "Java Desktop Systems", es: "Sistemas de escritorio con Java" }, description: { en: "Desktop app foundations with structured logic, CRUD flows, and data handling.", es: "Bases de aplicaciones desktop con logica estructurada, flujos CRUD y manejo de datos." } },
+  { title: { en: "Medical Platform Development", es: "Desarrollo de plataforma medica" }, description: { en: "MedAgenda: scheduling workflows, patient-doctor coordination, and full-stack system thinking.", es: "MedAgenda: flujos de citas, coordinacion paciente-doctor y pensamiento de sistema full-stack." } },
+  { title: { en: "SaaS and AI Development", es: "Desarrollo SaaS e IA" }, description: { en: "SupportMind AI: RAG workflows, vector search, internal documentation, and AI support automation.", es: "SupportMind AI: flujos RAG, busqueda vectorial, documentacion interna y automatizacion de soporte con IA." } },
+  { title: { en: "Cloud, DevOps and Architecture", es: "Cloud, DevOps y arquitectura" }, description: { en: "Deployment workflows, CI/CD concepts, cloud hosting, Docker, and scalable backend structures.", es: "Flujos de despliegue, conceptos CI/CD, hosting cloud, Docker y estructuras backend escalables." } },
+  { title: { en: "Current Focus", es: "Enfoque actual" }, description: { en: "Backend, QA, DevOps, AI, Cloud, Software Architecture, Big Data, ETL, and Machine Learning foundations.", es: "Backend, QA, DevOps, IA, Cloud, Arquitectura de Software, Big Data, ETL y fundamentos de Machine Learning." } }
+];

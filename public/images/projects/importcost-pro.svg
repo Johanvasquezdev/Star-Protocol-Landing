@@ -1,0 +1,14 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="920" fill="#070B18"/>
+  <path d="M0 0h1400v920H0z" fill="url(#a)"/>
+  <rect x="120" y="120" width="1160" height="680" rx="42" fill="#0A1328" stroke="#E244FF" stroke-opacity=".24"/>
+  <rect x="190" y="210" width="420" height="470" rx="30" fill="#111B31" stroke="white" stroke-opacity=".1"/>
+  <rect x="690" y="210" width="500" height="120" rx="26" fill="white" fill-opacity=".07"/>
+  <rect x="690" y="370" width="500" height="120" rx="26" fill="white" fill-opacity=".05"/>
+  <rect x="690" y="530" width="500" height="120" rx="26" fill="white" fill-opacity=".05"/>
+  <path d="M250 300h280M250 390h220M250 480h310M250 570h180" stroke="#E244FF" stroke-opacity=".7" stroke-width="14" stroke-linecap="round"/>
+  <path d="M760 270h260M760 430h340M760 590h230" stroke="#25D6FF" stroke-opacity=".62" stroke-width="14" stroke-linecap="round"/>
+  <text x="190" y="735" fill="#EAF7FF" font-family="Inter, Arial" font-size="54" font-weight="800">ImportCost Pro</text>
+  <text x="190" y="785" fill="#FFC7FF" font-family="Inter, Arial" font-size="26" font-weight="600">Import cost calculator</text>
+  <defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1170 160) rotate(140) scale(1300 850)"><stop stop-color="#E244FF" stop-opacity=".22"/><stop offset=".58" stop-color="#25D6FF" stop-opacity=".1"/><stop offset="1" stop-color="#040711" stop-opacity="0"/></radialGradient></defs>
+</svg>

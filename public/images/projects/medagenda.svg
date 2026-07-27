@@ -1,0 +1,14 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="920" fill="#06101F"/>
+  <path d="M0 0h1400v920H0z" fill="url(#a)"/>
+  <rect x="120" y="110" width="1160" height="700" rx="42" fill="#08172B" stroke="#25D6FF" stroke-opacity=".24"/>
+  <rect x="180" y="180" width="360" height="56" rx="16" fill="#25D6FF" fill-opacity=".22"/>
+  <rect x="180" y="280" width="290" height="340" rx="28" fill="#0B223D" stroke="white" stroke-opacity=".1"/>
+  <rect x="540" y="280" width="680" height="86" rx="24" fill="white" fill-opacity=".07"/>
+  <rect x="540" y="400" width="680" height="86" rx="24" fill="white" fill-opacity=".05"/>
+  <rect x="540" y="520" width="680" height="86" rx="24" fill="white" fill-opacity=".05"/>
+  <path d="M610 323h420M610 443h300M610 563h470" stroke="#25D6FF" stroke-opacity=".7" stroke-width="14" stroke-linecap="round"/>
+  <text x="180" y="710" fill="#EAF7FF" font-family="Inter, Arial" font-size="54" font-weight="800">MedAgenda</text>
+  <text x="180" y="760" fill="#A3D8FF" font-family="Inter, Arial" font-size="26" font-weight="600">Healthcare scheduling system</text>
+  <defs><radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 90) rotate(36) scale(1450 900)"><stop stop-color="#25D6FF" stop-opacity=".2"/><stop offset="1" stop-color="#040711" stop-opacity="0"/></radialGradient></defs>
+</svg>
