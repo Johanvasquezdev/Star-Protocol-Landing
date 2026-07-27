@@ -13,7 +13,11 @@ import Footer from '../components/layout/Footer.svelte';
 const locale = 'es';
 ---
 
-<Layout title="Johan Gabriel Vasquez | Product Engineering">
+<Layout 
+	title="Johan Gabriel Vasquez | Ingeniería de Producto"
+	lang="es"
+	description="Johan Gabriel Vasquez - Desarrollador e ingeniero de producto full-stack"
+>
 	<GlobalBackground client:only="svelte" />
 	<Navbar client:load locale={locale} />
 	<main>
