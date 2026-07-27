@@ -18,7 +18,7 @@
 </script>
 
 <header class="fixed inset-x-0 top-4 z-50 px-4">
-  <nav aria-label="Primary navigation" class="mx-auto max-w-7xl rounded-full px-4 py-3" style="
+  <nav aria-label="Primary navigation" class="mx-auto max-w-7xl px-4 py-3 {open ? 'rounded-3xl' : 'rounded-full'}" style="
     background: rgba(3,5,10,0.75); 
     backdrop-filter: blur(20px); 
     border: 1px solid rgba(0,191,255,0.1);

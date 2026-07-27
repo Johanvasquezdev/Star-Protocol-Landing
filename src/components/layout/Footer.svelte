@@ -14,12 +14,12 @@
 ">
   <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
     <div class="flex items-center gap-3">
-      <span class="flex h-8 w-8 items-center justify-center rounded-lg text-xs font-black" style="
+      <span class="flex h-8 w-8 items-center justify-center rounded-lg overflow-hidden" style="
         border: 1px solid rgba(0,191,255,0.4); 
         background: rgba(0,191,255,0.08); 
-        color: var(--c-fire);
-        font-family: 'Outfit', sans-serif;
-      ">JG</span>
+      ">
+        <img src="/images/star-logo.png" alt="Logo" class="w-6 h-6 object-contain" style="mix-blend-mode: screen;" />
+      </span>
       <p style="font-family: 'Outfit', sans-serif; font-size:0.65rem; letter-spacing:0.1em; color:rgba(255,255,255,0.5); text-transform:uppercase">
         &copy; {currentYear} Johan Gabriel Vasquez
       </p>

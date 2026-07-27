@@ -156,7 +156,7 @@
     </div>
 
     <!-- Metrics row -->
-    <div class="grid grid-cols-3 gap-6 max-w-lg mx-auto pt-12 border-t mb-12" style="border-color: var(--c-border)">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 max-w-lg mx-auto pt-12 border-t mb-12" style="border-color: var(--c-border)">
       {#each [
         { val: t.heroMetricOne, label: t.heroMetricOneLabel },
         { val: t.heroMetricTwo, label: t.heroMetricTwoLabel },

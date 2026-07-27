@@ -46,22 +46,22 @@
       
       <div class="mt-10 flex flex-col gap-5">
         <a href="mailto:johanvasquezdev3@gmail.com" class="group flex items-center gap-4 text-white/70 transition-colors hover:text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">
-          <div class="flex h-12 w-12 items-center justify-center rounded-full transition-transform group-hover:scale-110 group-hover:bg-[rgba(0,191,255,0.1)] group-hover:text-[var(--c-fire)]" style="border: 1px solid rgba(255,255,255,0.1)">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full transition-transform group-hover:scale-110 group-hover:bg-[rgba(0,191,255,0.1)] group-hover:text-[var(--c-fire)]" style="border: 1px solid rgba(255,255,255,0.1)">
             <Mail size={20} />
           </div>
-          <span class="text-lg">johanvasquezdev3@gmail.com</span>
+          <span class="text-xs sm:text-lg break-all">johanvasquezdev3@gmail.com</span>
         </a>
         <a href="https://github.com/Johanvasquezdev" target="_blank" rel="noreferrer" class="group flex items-center gap-4 text-white/70 transition-colors hover:text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">
-          <div class="flex h-12 w-12 items-center justify-center rounded-full transition-transform group-hover:scale-110 group-hover:bg-[rgba(0,191,255,0.1)] group-hover:text-[var(--c-fire)]" style="border: 1px solid rgba(255,255,255,0.1)">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full transition-transform group-hover:scale-110 group-hover:bg-[rgba(0,191,255,0.1)] group-hover:text-[var(--c-fire)]" style="border: 1px solid rgba(255,255,255,0.1)">
             <Github size={20} />
           </div>
-          <span class="text-lg">github.com/Johanvasquezdev</span>
+          <span class="text-xs sm:text-lg break-all">github.com/Johanvasquezdev</span>
         </a>
         <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" target="_blank" rel="noreferrer" class="group flex items-center gap-4 text-white/70 transition-colors hover:text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">
-          <div class="flex h-12 w-12 items-center justify-center rounded-full transition-transform group-hover:scale-110 group-hover:bg-[rgba(0,191,255,0.1)] group-hover:text-[var(--c-fire)]" style="border: 1px solid rgba(255,255,255,0.1)">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full transition-transform group-hover:scale-110 group-hover:bg-[rgba(0,191,255,0.1)] group-hover:text-[var(--c-fire)]" style="border: 1px solid rgba(255,255,255,0.1)">
             <Linkedin size={20} />
           </div>
-          <span class="text-lg">LinkedIn</span>
+          <span class="text-xs sm:text-lg break-all">LinkedIn</span>
         </a>
       </div>
     </div>
