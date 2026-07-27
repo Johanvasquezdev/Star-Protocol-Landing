@@ -1,6 +1,6 @@
 <script>
   import { T, useTask } from '@threlte/core';
-  import { OrbitControls, Stars, Float, Grid } from '@threlte/extras';
+  import { OrbitControls, Stars, Float, Grid, HTML } from '@threlte/extras';
 
   let rotation = 0;
   let scrollY = 0;
@@ -86,6 +86,35 @@
       <T.TorusGeometry args={[3.2, 0.01, 32, 100]} />
       <T.MeshBasicMaterial color="#25d6ff" transparent opacity={0.5} />
     </T.Mesh>
+
+    <!-- Floating Tech Logos Orbiting the Planet -->
+    <T.Group rotation.y={rotation * 0.4} rotation.x={Math.sin(rotation * 0.2) * 0.2}>
+      <HTML position={[3, 1, 0]} transform>
+        <div class="glass-panel p-3 rounded-xl flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" style="width: 50px; height: 50px;">
+          <img src="/images/tech/aws.png" alt="AWS" class="w-full h-full object-contain" />
+        </div>
+      </HTML>
+      <HTML position={[-1.5, -1, 2.5]} transform>
+        <div class="glass-panel p-3 rounded-xl flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" style="width: 50px; height: 50px;">
+          <img src="/images/tech/postgresql.png" alt="PostgreSQL" class="w-full h-full object-contain" />
+        </div>
+      </HTML>
+      <HTML position={[-1.5, 2, -2]} transform>
+        <div class="glass-panel p-3 rounded-xl flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" style="width: 50px; height: 50px;">
+          <img src="/images/tech/git.png" alt="Git" class="w-full h-full object-contain" />
+        </div>
+      </HTML>
+      <HTML position={[2, -2, -1.5]} transform>
+        <div class="glass-panel p-3 rounded-xl flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" style="width: 50px; height: 50px;">
+          <img src="/images/tech/dotnet.png" alt=".NET" class="w-full h-full object-contain" />
+        </div>
+      </HTML>
+      <HTML position={[0, 2.5, 2]} transform>
+        <div class="glass-panel p-3 rounded-xl flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" style="width: 50px; height: 50px;">
+          <img src="/images/tech/linux.png" alt="Linux" class="w-full h-full object-contain" />
+        </div>
+      </HTML>
+    </T.Group>
   </T.Group>
 </Float>
 
