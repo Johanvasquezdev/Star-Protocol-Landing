@@ -47,7 +47,7 @@
 <T.PointLight position={[-4, -2, 2]} intensity={25} color="#e244ff" />
 
 <!-- Stars background -->
-<Stars radius={50} depth={50} count={800} factor={7} saturation={0.5} fade speed={0.3} />
+<Stars radius={50} depth={50} count={1000} factor={14} saturation={0.8} fade speed={0.1} />
 
 <!-- Cyberpunk Floor Grid -->
 <Grid 
