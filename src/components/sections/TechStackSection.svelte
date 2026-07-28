@@ -36,8 +36,7 @@
         { name: ".NET", dot: "bg-violet-600", logo: "/images/tech/dotnet.png" },
         { name: "Spring Boot", dot: "bg-green-500", logo: "/images/tech/springboot.png" },
         { name: "Node.js", dot: "bg-green-500", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
-        { name: "REST APIs", dot: "bg-pink-500", logo: "https://cdn.simpleicons.org/postman/FF6C37" },
-        { name: "Clean Architecture", dot: "bg-emerald-500", logo: "https://cdn.simpleicons.org/hexagon/ffffff" }
+        { name: "REST APIs", dot: "bg-pink-500", logo: "https://cdn.simpleicons.org/postman/FF6C37" }
       ]
     },
     {
