@@ -34,10 +34,10 @@
 
 <svelte:window bind:scrollY={scrollY} on:mousemove={onPointerMove} />
 
-<!-- Camera moves forward (negative Z) and slightly down based on scroll -->
+<!-- Camera remains static (no zoom on scroll) -->
 <T.PerspectiveCamera 
   makeDefault 
-  position={[0, 2 - (scrollY * 0.002), 6 - (scrollY * 0.005)]} 
+  position={[0, 2, 6]} 
   fov={45} 
 />
 
@@ -47,7 +47,7 @@
 <T.PointLight position={[-4, -2, 2]} intensity={25} color="#e244ff" />
 
 <!-- Stars background -->
-<Stars radius={50} depth={50} count={3000} factor={4} saturation={0.5} fade speed={1} />
+<Stars radius={50} depth={50} count={800} factor={7} saturation={0.5} fade speed={0.3} />
 
 <!-- Cyberpunk Floor Grid -->
 <Grid 
