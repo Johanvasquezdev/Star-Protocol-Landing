@@ -67,7 +67,7 @@ export const featuredProjects: Project[] = [
     accent: "magenta",
     image: { src: "/images/projects/importcost.jpg", alt: { en: "ImportCost Pro dashboard mockup", es: "Mockup de ImportCost Pro" } },
     github: "https://github.com/Johanvasquezdev/ImportCost-Pro",
-    demo: "https://importcost-pro.fly.dev/"
+    demo: "https://importcost-pro.onrender.com"
   },
   {
     name: "Real Estate App",
