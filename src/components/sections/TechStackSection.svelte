@@ -32,8 +32,9 @@
       color: "text-emerald-400",
       border: "hover:border-emerald-500/30",
       items: [
-        { name: "C#", dot: "bg-green-600", logo: "https://cdn.simpleicons.org/csharp/239120" },
+        { name: "C#", dot: "bg-green-600", logo: "/images/tech/csharp.png" },
         { name: ".NET", dot: "bg-violet-600", logo: "/images/tech/dotnet.png" },
+        { name: "Spring Boot", dot: "bg-green-500", logo: "/images/tech/springboot.png" },
         { name: "Node.js", dot: "bg-green-500", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
         { name: "REST APIs", dot: "bg-pink-500", logo: "https://cdn.simpleicons.org/postman/FF6C37" },
         { name: "Clean Architecture", dot: "bg-emerald-500", logo: "https://cdn.simpleicons.org/hexagon/ffffff" }
@@ -45,7 +46,7 @@
       color: "text-violet-400",
       border: "hover:border-violet-500/30",
       items: [
-        { name: "SQL Server", dot: "bg-red-500", logo: "https://cdn.simpleicons.org/microsoftsqlserver/CC292B" },
+        { name: "SQL Server", dot: "bg-red-500", logo: "/images/tech/sqlserver.png" },
         { name: "PostgreSQL", dot: "bg-blue-400", logo: "/images/tech/postgresql.png" },
         { name: "EF Core", dot: "bg-violet-500", logo: "https://cdn.simpleicons.org/dotnet/512BD4" }
       ]
@@ -56,8 +57,8 @@
       color: "text-orange-400",
       border: "hover:border-orange-500/30",
       items: [
-        { name: "Azure", dot: "bg-blue-600", logo: "https://cdn.simpleicons.org/microsoftazure/0078D4" },
-        { name: "AWS", dot: "bg-orange-400", logo: "/images/tech/aws.png" },
+        { name: "Azure", dot: "bg-blue-600", logo: "/images/tech/azure.png" },
+        { name: "AWS", dot: "bg-orange-400", logo: "/images/tech/aws2.png" },
         { name: "Docker", dot: "bg-blue-500", logo: "/images/tech/docker.png" },
         { name: "Git & GitHub", dot: "bg-white", logo: "/images/tech/git.png" }
       ]
