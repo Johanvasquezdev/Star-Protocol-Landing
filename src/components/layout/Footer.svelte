@@ -2,7 +2,7 @@
   import Github from '../ui/icons/GithubIcon.svelte';
   import Linkedin from '../ui/icons/LinkedinIcon.svelte';
   import Mail from 'lucide-svelte/icons/mail';
-  import StarLogo from '../ui/icons/StarLogo.svelte';
+  import DevLogo from '../ui/icons/DevLogo.svelte';
 
   export let locale: 'en' | 'es' = 'en';
   
@@ -19,7 +19,7 @@
         border: 1px solid rgba(0,191,255,0.4); 
         background: rgba(0,191,255,0.08); 
       ">
-        <StarLogo size={18} className="text-[#00BFFF]" style="filter: drop-shadow(0 0 6px rgba(0,191,255,0.8));" />
+        <DevLogo size={18} className="text-[#00BFFF]" style="filter: drop-shadow(0 0 6px rgba(0,191,255,0.8));" />
       </span>
       <p style="font-family: 'Outfit', sans-serif; font-size:0.65rem; letter-spacing:0.1em; color:rgba(255,255,255,0.5); text-transform:uppercase">
         &copy; {currentYear} Johan Gabriel Vasquez

@@ -4,7 +4,7 @@
   import Github from '../ui/icons/GithubIcon.svelte';
   import Linkedin from '../ui/icons/LinkedinIcon.svelte';
   import Mail from 'lucide-svelte/icons/mail';
-  import StarLogo from '../ui/icons/StarLogo.svelte';
+  import DevLogo from '../ui/icons/DevLogo.svelte';
   import { translations } from '../../../data/translations';
   import { fade } from 'svelte/transition';
 
@@ -30,7 +30,7 @@
           border: 1px solid rgba(0,191,255,0.4); 
           background: rgba(0,191,255,0.08); 
         ">
-          <StarLogo size={22} className="text-[#00BFFF]" style="filter: drop-shadow(0 0 8px rgba(0,191,255,0.8));" />
+          <DevLogo size={22} className="text-[#00BFFF]" style="filter: drop-shadow(0 0 8px rgba(0,191,255,0.8));" />
         </span>
         <span class="hidden sm:inline">Johan Gabriel Vasquez</span>
       </a>
