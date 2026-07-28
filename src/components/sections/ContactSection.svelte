@@ -20,25 +20,6 @@
   <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
     
     <div class="anim-fade-right flex flex-col justify-center">
-      <div>
-        <span style="
-          background: rgba(0,191,255,0.08);
-          border: 1px solid rgba(0,191,255,0.2);
-          color: var(--c-fire);
-          border-radius: 999px;
-          padding: 0.5rem 1rem;
-          font-family: 'Outfit', sans-serif;
-          font-size: 0.75rem;
-          font-weight: 700;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-        ">
-          <Sparkles size={16} /> {t.available}
-        </span>
-      </div>
       
       <h2 class="mt-8 text-4xl font-bold leading-tight text-white sm:text-6xl section-title">
         {t.contactTitle}
