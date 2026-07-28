@@ -56,7 +56,8 @@ export const translations = {
     techTitle: "Technologies I use",
     techStackLabel: "Stack & Tools",
     certificationsTitle: "Certifications & Training",
-    futureLearningTitle: "Future Learning & Certifications"
+    futureLearningTitle: "Future Learning & Certifications",
+    viewBadge: "View Badge"
   },
   es: {
     nav: ["Inicio", "Perfil", "Stack", "Proyectos", "Contacto"],
@@ -113,7 +114,8 @@ export const translations = {
     techTitle: "Tecnologías que utilizo",
     techStackLabel: "Stack y Herramientas",
     certificationsTitle: "Certificaciones y Capacitación",
-    futureLearningTitle: "Próximas Certificaciones y Aprendizaje"
+    futureLearningTitle: "Próximas Certificaciones y Aprendizaje",
+    viewBadge: "Ver Credencial"
   }
 } satisfies Record<Locale, Record<string, string | string[]>>;
 
@@ -157,7 +159,8 @@ export const certsData = [
       es: "Fundamentos de redes y conmutación"
     },
     color: "from-blue-600 to-cyan-500",
-    short: "CCNA"
+    short: "CCNA",
+    url: "#"
   },
   {
     provider: "ITLA",
@@ -167,7 +170,8 @@ export const certsData = [
       es: "Desarrollo web integral enfocado en JavaScript"
     },
     color: "from-yellow-500 to-yellow-400",
-    short: "JS"
+    short: "JS",
+    url: "#"
   },
   {
     provider: "ORACLE",
@@ -177,7 +181,8 @@ export const certsData = [
       es: "Oracle Cloud Infrastructure Foundations Associate"
     },
     color: "from-red-600 to-red-500",
-    short: "OCI"
+    short: "OCI",
+    url: "#"
   },
   {
     provider: "TALENTO DIGITAL",
@@ -187,7 +192,8 @@ export const certsData = [
       es: "Programa de formación en Programación Full Stack"
     },
     color: "from-emerald-500 to-teal-400",
-    short: "FS"
+    short: "FS",
+    url: "#"
   },
   {
     provider: "CISCO",
@@ -197,6 +203,7 @@ export const certsData = [
       es: "Fundamentos de programación en C++"
     },
     color: "from-blue-700 to-blue-500",
-    short: "C++"
+    short: "C++",
+    url: "#"
   }
 ];
