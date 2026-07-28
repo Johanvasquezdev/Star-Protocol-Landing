@@ -4,6 +4,7 @@
   import Github from '../ui/icons/GithubIcon.svelte';
   import Linkedin from '../ui/icons/LinkedinIcon.svelte';
   import Mail from 'lucide-svelte/icons/mail';
+  import AstroLogo from '../ui/icons/AstroLogo.svelte';
   import { translations } from '../../../data/translations';
   import { fade } from 'svelte/transition';
 
@@ -29,7 +30,7 @@
           border: 1px solid rgba(0,191,255,0.4); 
           background: rgba(0,191,255,0.08); 
         ">
-          <img src="/images/star-logo.png" alt="Logo" class="w-8 h-8 object-contain" style="mix-blend-mode: screen;" />
+          <AstroLogo size={20} className="text-[#00BFFF]" style="filter: drop-shadow(0 0 8px rgba(0,191,255,0.8));" />
         </span>
         <span class="hidden sm:inline">Johan Gabriel Vasquez</span>
       </a>
