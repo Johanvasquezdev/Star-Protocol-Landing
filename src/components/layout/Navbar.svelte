@@ -25,7 +25,7 @@
     border: 1px solid rgba(0,191,255,0.1);
   ">
     <div class="flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-3 rounded-full pr-3 text-sm font-semibold text-white/80 transition hover:text-white" style="font-family: 'Outfit', sans-serif;">
+      <a href="#home" data-cuelume-hover="chime" class="flex items-center gap-3 rounded-full pr-3 text-sm font-semibold text-white/80 transition hover:text-white" style="font-family: 'Outfit', sans-serif;">
         <span class="flex h-10 w-10 items-center justify-center rounded-lg transition-all hover:scale-105 overflow-hidden" style="
           border: 1px solid rgba(0,191,255,0.4); 
           background: rgba(0,191,255,0.08); 
@@ -37,7 +37,7 @@
       
       <div class="hidden items-center gap-1 lg:flex">
         {#each nav as item, index}
-          <a href={`#${ids[index]}`} class="group flex items-center gap-1.5 rounded-full px-3 py-2 transition hover:text-white" style="
+          <a href={`#${ids[index]}`} data-cuelume-hover="tick" class="group flex items-center gap-1.5 rounded-full px-3 py-2 transition hover:text-white" style="
             font-family: 'Outfit', sans-serif; 
             font-weight: 700; 
             letter-spacing: 0.08em; 
@@ -52,10 +52,10 @@
       </div>
       
       <div class="flex items-center gap-2">
-        <a href="https://github.com/Johanvasquezdev" target="_blank" rel="noreferrer" class="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#00BFFF] hover:text-[#00BFFF] sm:flex">
+        <a href="https://github.com/Johanvasquezdev" data-cuelume-hover="tick" target="_blank" rel="noreferrer" class="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#00BFFF] hover:text-[#00BFFF] sm:flex">
           <Github size={17} />
         </a>
-        <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" target="_blank" rel="noreferrer" class="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#00BFFF] hover:text-[#00BFFF] sm:flex">
+        <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" data-cuelume-hover="tick" target="_blank" rel="noreferrer" class="hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#00BFFF] hover:text-[#00BFFF] sm:flex">
           <Linkedin size={17} />
         </a>
         
@@ -64,7 +64,7 @@
           <a href="/es" class="px-3 py-1 rounded-full transition {locale === 'es' ? 'text-black' : 'text-white/60 hover:text-white'}" style="{locale === 'es' ? 'background: var(--c-fire)' : ''}">ES</a>
         </div>
 
-        <a href="#contact" class="hidden items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-black transition-all hover:scale-105 md:inline-flex" style="
+          <a href="#contact" data-cuelume-press="pulse" data-cuelume-release="release" class="hidden items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-black transition-all hover:scale-105 md:inline-flex" style="
           font-family: 'Outfit', sans-serif; 
           background: var(--c-fire); 
           box-shadow: var(--glow-fire);
@@ -90,6 +90,7 @@
         {#each nav as item, index}
           <a
             href={`#${ids[index]}`}
+            data-cuelume-hover="tick"
             on:click={() => open = false}
             class="flex items-center gap-2 rounded-2xl px-4 py-3 text-sm font-semibold text-white/70 transition hover:bg-white/10 hover:text-white"
             style="font-family: 'Outfit', sans-serif; letter-spacing: 0.08em; text-transform: uppercase;"
@@ -98,10 +99,10 @@
           </a>
         {/each}
         <div class="mt-2 grid grid-cols-2 gap-2">
-          <a href="https://github.com/Johanvasquezdev" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/75">
+          <a href="https://github.com/Johanvasquezdev" data-cuelume-hover="tick" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/75">
             <Github size={16} /> GitHub
           </a>
-          <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/75">
+          <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" data-cuelume-hover="tick" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/75">
             <Linkedin size={16} /> LinkedIn
           </a>
         </div>

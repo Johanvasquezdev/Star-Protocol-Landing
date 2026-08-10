@@ -27,13 +27,13 @@
     </div>
     
     <div class="flex items-center gap-6 text-white/50">
-      <a href="https://github.com/Johanvasquezdev" target="_blank" rel="noreferrer" class="transition-colors hover:text-white" style="hover:color: var(--c-fire)" aria-label="GitHub">
+      <a href="https://github.com/Johanvasquezdev" data-cuelume-hover="tick" target="_blank" rel="noreferrer" class="transition-colors hover:text-white" style="hover:color: var(--c-fire)" aria-label="GitHub">
         <Github size={20} />
       </a>
-      <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" target="_blank" rel="noreferrer" class="transition-colors hover:text-white" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/johan-gabriel-vasquez-5b539a312" data-cuelume-hover="tick" target="_blank" rel="noreferrer" class="transition-colors hover:text-white" aria-label="LinkedIn">
         <Linkedin size={20} />
       </a>
-      <a href="mailto:johanvasquezdev@gmail.com" class="transition-colors hover:text-white" aria-label="Email">
+      <a href="mailto:johanvasquezdev@gmail.com" data-cuelume-hover="tick" class="transition-colors hover:text-white" aria-label="Email">
         <Mail size={20} />
       </a>
     </div>

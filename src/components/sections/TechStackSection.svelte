@@ -32,9 +32,9 @@
       color: "text-emerald-400",
       border: "hover:border-emerald-500/30",
       items: [
-        { name: "C#", dot: "bg-green-600", logo: "/images/tech/csharp.png" },
-        { name: ".NET", dot: "bg-violet-600", logo: "/images/tech/dotnet.png" },
-        { name: "Spring Boot", dot: "bg-green-500", logo: "/images/tech/springboot.png" },
+        { name: "C#", dot: "bg-green-600", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" },
+        { name: ".NET", dot: "bg-violet-600", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dot-net/dot-net-original.svg" },
+        { name: "Spring Boot", dot: "bg-green-500", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" },
         { name: "Node.js", dot: "bg-green-500", logo: "https://cdn.simpleicons.org/nodedotjs/339933" },
         { name: "REST APIs", dot: "bg-pink-500", logo: "https://cdn.simpleicons.org/postman/FF6C37" }
       ]
@@ -45,9 +45,13 @@
       color: "text-violet-400",
       border: "hover:border-violet-500/30",
       items: [
-        { name: "SQL Server", dot: "bg-red-500", logo: "/images/tech/sqlserver.png" },
-        { name: "PostgreSQL", dot: "bg-blue-400", logo: "/images/tech/postgresql.png" },
-        { name: "EF Core", dot: "bg-violet-500", logo: "https://cdn.simpleicons.org/dotnet/512BD4" }
+        { name: "SQL Server", dot: "bg-red-500", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
+        { name: "PostgreSQL", dot: "bg-blue-400", logo: "https://cdn.simpleicons.org/postgresql/4169E1" },
+        { name: "MySQL", dot: "bg-blue-400", logo: "https://cdn.simpleicons.org/mysql/4479A1" },
+        { name: "Firebase", dot: "bg-amber-400", logo: "https://cdn.simpleicons.org/firebase/FFCA28" },
+        { name: "Supabase", dot: "bg-emerald-400", logo: "https://cdn.simpleicons.org/supabase/3ECF8E" },
+        { name: "EF Core", dot: "bg-violet-500", logo: "https://cdn.simpleicons.org/dotnet/512BD4" },
+        { name: "Sequelize", dot: "bg-sky-400", logo: "https://cdn.simpleicons.org/sequelize/52B0E7" }
       ]
     },
     {
@@ -75,7 +79,7 @@
         <!-- Header -->
         <div class="mb-12">
           <h3 class="text-xs font-bold tracking-widest uppercase text-white/40 mb-2">{t.techStackLabel}</h3>
-          <h2 class="text-3xl md:text-5xl font-bold text-white mb-6" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">{t.techTitle}</h2>
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 display-type" style="text-transform: uppercase;">{t.techTitle}</h2>
           <p class="text-white/60 text-sm md:text-base max-w-2xl leading-relaxed" style="font-family: 'Outfit', sans-serif;">
             {locale === 'en' ? 'I also integrate agentic AI tools like Claude Code, Cursor, and Supabase into my workflow to accelerate development and focus on architecture.' : 'También integro herramientas de IA agéntica como Claude Code, Cursor y Supabase en mi flujo de trabajo para acelerar el desarrollo y enfocarme en la arquitectura.'}
           </p>
@@ -92,7 +96,7 @@
                 <div class="p-3 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors">
                   <svelte:component this={category.icon} class="w-6 h-6 {category.color}" />
                 </div>
-                <h4 class="text-lg font-bold text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">{techCategoriesData[category.id][locale]}</h4>
+                <h4 class="text-lg font-bold text-white display-type" style="text-transform: uppercase;">{techCategoriesData[category.id][locale]}</h4>
               </div>
               
               <div class="flex flex-col gap-3 flex-grow">
@@ -100,7 +104,7 @@
                   <div class="flex items-center gap-3 p-2 -mx-2 rounded-lg hover:bg-white/5 transition-colors">
                     {#if item.logo}
                       <div class="w-5 h-5 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
-                        <img src={item.logo} alt={item.name} class="max-w-full max-h-full object-contain" />
+                        <img src={item.logo} alt="" aria-hidden="true" loading="lazy" decoding="async" class="max-w-full max-h-full object-contain" />
                       </div>
                     {:else}
                       <div class="w-2 h-2 rounded-full {item.dot} shadow-[0_0_8px_currentColor] opacity-80"></div>

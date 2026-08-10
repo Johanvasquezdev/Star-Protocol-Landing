@@ -2,6 +2,70 @@ import type { Project } from "@/types";
 
 export const featuredProjects: Project[] = [
   {
+    name: "Artemis Banking Pro",
+    type: {
+      en: "FinTech / Banking Product",
+      es: "FinTech / Producto bancario"
+    },
+    status: { en: "Private Project", es: "Proyecto privado" },
+    description: {
+      en: "A banking product project focused on clearer account workflows, financial operations, and a polished digital banking experience.",
+      es: "Un proyecto bancario enfocado en flujos claros de cuentas, operaciones financieras y una experiencia digital pulida."
+    },
+    impact: {
+      en: "Frames everyday financial actions as a focused product experience with room for secure, maintainable system design.",
+      es: "Presenta las acciones financieras diarias como una experiencia enfocada, con espacio para un sistema seguro y mantenible."
+    },
+    role: { en: "Product concept, interface direction, system architecture", es: "Concepto de producto, direccion de interfaz, arquitectura de sistema" },
+    tags: ["FinTech", "Banking", "Product Design"],
+    accent: "magenta",
+    github: "https://github.com/Johanvasquezdev/ArtemisBankingPro"
+  },
+  {
+    name: "Aeris Flights",
+    type: {
+      en: "Aviation / Flight Management Platform",
+      es: "Aviacion / Plataforma de gestion de vuelos"
+    },
+    status: { en: "Featured Project", es: "Proyecto destacado" },
+    description: {
+      en: "A complete flight management platform with flight search, interactive seat selection, reservations, boarding passes, GPS tracking, and airline administration tools.",
+      es: "Una plataforma completa de gestion de vuelos con busqueda, seleccion interactiva de asientos, reservas, pases de abordar, rastreo GPS y herramientas administrativas."
+    },
+    impact: {
+      en: "Connects passenger booking flows with airline operations, a desktop admin client, live telemetry, and a production-ready Docker setup.",
+      es: "Conecta los flujos de reserva con operaciones de aerolinea, un cliente administrativo de escritorio, telemetria y despliegue con Docker."
+    },
+    role: { en: "Full-stack architecture, flight workflows, deployment", es: "Arquitectura full-stack, flujos de vuelos, despliegue" },
+    tags: ["Next.js", ".NET 8", "Clean Architecture", "Aviation"],
+    stack: ["Next.js", "React 19", ".NET 8", "EF Core", "SQL Server", "Docker"],
+    accent: "cyan",
+    image: { src: "https://opengraph.githubassets.com/1/Johanvasquezdev/Aeris-SIV", alt: { en: "Aeris Flights repository preview", es: "Vista previa del repositorio Aeris Flights" } },
+    github: "https://github.com/Johanvasquezdev/Aeris-SIV"
+  },
+  {
+    name: "ETLVentas",
+    type: {
+      en: "Data Engineering / Data Warehouse",
+      es: "Ingenieria de datos / Data Warehouse"
+    },
+    status: { en: "Featured Project", es: "Proyecto destacado" },
+    description: {
+      en: "A .NET 9 ETL and data warehouse system that consolidates CSV, REST API, and relational database sources into a star-schema model ready for business intelligence.",
+      es: "Un sistema ETL y data warehouse en .NET 9 que consolida fuentes CSV, APIs REST y bases relacionales en un modelo estrella listo para inteligencia de negocio."
+    },
+    impact: {
+      en: "Turns multi-source sales data into traceable dimensions and facts for Power BI analysis and repeatable operational loading.",
+      es: "Convierte datos de ventas de multiples fuentes en dimensiones y hechos trazables para analisis en Power BI y cargas operativas repetibles."
+    },
+    role: { en: "ETL architecture, data modeling, worker pipeline", es: "Arquitectura ETL, modelado de datos, pipeline worker" },
+    tags: ["Data Engineering", ".NET 9", "SQL Server", "Power BI"],
+    stack: [".NET 9", "EF Core", "SQL Server", "Worker Service", "Power BI"],
+    accent: "violet",
+    image: { src: "/images/etlventas.jpg", alt: { en: "ETLVentas data warehouse preview", es: "Vista previa del data warehouse ETLVentas" } },
+    github: "https://github.com/Johanvasquezdev/ETLVentas-Warehouse"
+  },
+  {
     name: "MedAgenda",
     type: {
       en: "HealthTech / Medical Appointment Platform",

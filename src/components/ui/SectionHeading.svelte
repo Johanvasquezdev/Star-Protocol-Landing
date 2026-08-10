@@ -16,7 +16,7 @@
 >
   {#if isInView}
     <div in:fly={{ y: 30, duration: 800, delay: 100 }}>
-      <h2 class="text-3xl font-semibold leading-tight tracking-normal text-white sm:text-5xl">{title}</h2>
+      <h2 class="section-title text-3xl font-semibold leading-tight text-white sm:text-5xl">{title}</h2>
       {#if subtitle}
         <p class="mt-5 text-base leading-8 text-white/70 sm:text-lg">{subtitle}</p>
       {/if}

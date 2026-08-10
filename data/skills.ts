@@ -26,7 +26,7 @@ export const skillCategories: SkillCategory[] = [
       es: "Modelos de datos, flujos asistidos por IA, patrones RAG, busqueda vectorial, dashboards y automatizaciones."
     },
     focus: "03",
-    items: ["PostgreSQL", "SQL Server", "Supabase", "MySQL", "OpenAI APIs", "LLMs", "RAG", "ETL basics"]
+    items: ["PostgreSQL", "SQL Server", "MySQL", "Firebase", "Supabase", "EF Core", "Sequelize", "OpenAI APIs", "LLMs", "RAG", "ETL basics"]
   },
   {
     title: { en: "Delivery, quality, and infrastructure", es: "Entrega, calidad e infraestructura" },

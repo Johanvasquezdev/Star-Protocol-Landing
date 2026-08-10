@@ -19,7 +19,7 @@
         <!-- Header -->
         <div class="mb-12">
           <h3 class="text-xs font-bold tracking-widest uppercase text-emerald-400 mb-2">Continuous Learning</h3>
-          <h2 class="text-3xl md:text-5xl font-bold text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">{t.certificationsTitle}</h2>
+          <h2 class="text-3xl md:text-5xl font-bold text-white display-type" style="text-transform: uppercase;">{t.certificationsTitle}</h2>
         </div>
 
         <!-- Grid -->

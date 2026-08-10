@@ -2,7 +2,7 @@
   import ThreeHeroObject from '../ThreeHeroObject.svelte';
 </script>
 
-<div class="relative w-full max-w-[600px] aspect-square mx-auto flex items-center justify-center pointer-events-none mt-12 mb-8 scale-90 md:scale-100">
+<div class="relative w-full max-w-[600px] aspect-square mx-auto flex items-center justify-center pointer-events-none mt-12 mb-8 scale-[0.88] sm:scale-90 md:scale-100">
   
   <!-- Outer Orbit (Radius ~280px) -->
   <div class="absolute w-[560px] h-[560px] rounded-full border border-[rgba(0,191,255,0.15)]"></div>
@@ -14,7 +14,7 @@
   <div class="absolute w-[240px] h-[240px] rounded-full border border-[rgba(0,191,255,0.3)]"></div>
 
   <!-- Center: 3D Planet -->
-  <div class="absolute inset-0 m-auto w-full h-full z-10 flex items-center justify-center scale-90 md:scale-100">
+  <div class="absolute inset-0 m-auto w-full h-full z-10 flex items-center justify-center translate-x-[7%] scale-[0.95] sm:translate-x-0 sm:scale-90 md:scale-100">
     <ThreeHeroObject />
   </div>
 

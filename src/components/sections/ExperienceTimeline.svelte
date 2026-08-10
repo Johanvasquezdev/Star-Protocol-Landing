@@ -41,7 +41,7 @@
                 <p style="font-family: 'Outfit', sans-serif; font-size:0.65rem; letter-spacing:0.2em; color:var(--c-fire); text-transform:uppercase">
                   SYS.LOG_0{index + 1}
                 </p>
-                <h3 class="mt-3 text-xl font-bold text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">{item.title[locale]}</h3>
+                <h3 class="mt-3 text-xl font-bold text-white display-type" style="text-transform: uppercase;">{item.title[locale]}</h3>
                 <p class="mt-3 text-sm leading-7 text-white/70">{item.description[locale]}</p>
               </div>
             </div>

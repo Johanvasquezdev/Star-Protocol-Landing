@@ -50,6 +50,7 @@
       <div class="flex items-center gap-3 pb-8">
         <button 
           on:click={scrollPrev}
+          data-cuelume-press="press" data-cuelume-release="release"
           disabled={!prevBtnEnabled}
           class="flex h-12 w-12 items-center justify-center rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed hover:scale-105"
           style="
@@ -63,6 +64,7 @@
         </button>
         <button 
           on:click={scrollNext}
+          data-cuelume-press="press" data-cuelume-release="release"
           disabled={!nextBtnEnabled}
           class="flex h-12 w-12 items-center justify-center rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed hover:scale-105"
           style="

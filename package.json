@@ -14,6 +14,7 @@
     "@threlte/core": "latest",
     "@threlte/extras": "latest",
     "clsx": "latest",
+    "cuelume": "^0.2.2",
     "embla-carousel-autoplay": "^8.6.0",
     "lenis": "latest",
     "lucide-svelte": "latest",

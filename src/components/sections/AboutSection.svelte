@@ -18,8 +18,8 @@
       <div in:fly={{ y: 30, duration: 800 }}>
         <!-- Header -->
         <div class="mb-12">
-          <h3 class="text-xs font-bold tracking-widest uppercase text-white/40 mb-2">About Me</h3>
-          <h2 class="text-4xl md:text-5xl font-bold text-white" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">Who I am</h2>
+          <h3 class="text-xs font-bold tracking-widest uppercase text-white/40 mb-2">{t.aboutOverline}</h3>
+          <h2 class="text-4xl md:text-5xl font-bold text-white display-type" style="text-transform: uppercase;">{t.aboutQuestion}</h2>
         </div>
 
         <!-- Profile and Text Content -->
@@ -33,7 +33,7 @@
           
           <!-- Text -->
           <div class="flex-1 text-center md:text-left">
-            <h3 class="text-3xl md:text-4xl font-bold text-white mb-2" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase;">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-2 display-type" style="text-transform: uppercase;">
               {t.aboutHeading}
             </h3>
             <p class="text-[var(--c-fire)] text-xs sm:text-sm tracking-widest font-semibold uppercase mb-6" style="font-family: 'Outfit', sans-serif;">

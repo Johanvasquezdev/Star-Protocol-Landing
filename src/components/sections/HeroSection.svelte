@@ -13,7 +13,7 @@
     const titleEl = document.querySelector('.hero-title') as HTMLElement;
     if (titleEl) {
       const words = titleEl.textContent!.trim().split(' ');
-      titleEl.innerHTML = words.map(w => `<span class="hero-word inline-block max-w-full overflow-hidden py-2 -my-2"><span class="hero-word-inner inline-block max-w-full break-words">${w}</span></span>`).join(' ');
+      titleEl.innerHTML = words.map((w, index) => `<span class="hero-word inline-block max-w-full overflow-hidden py-2 -my-2 ${index === 0 ? 'hero-word-accent' : ''}"><span class="hero-word-inner inline-block max-w-full break-words">${w}</span></span>`).join(' ');
 
       // Title
 
@@ -104,10 +104,7 @@
   <div class="container mx-auto px-6 max-w-5xl relative z-10 text-center">
 
     <!-- Main title — word-by-word reveal -->
-    <h1 class="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-8 mx-auto" style="
-      font-family: 'Syncopate', sans-serif; font-weight: 700; text-transform: uppercase;
-      color: var(--c-text); max-width: 100%; word-wrap: break-word;
-    ">
+    <h1 class="hero-title mb-8 mx-auto text-white uppercase" style="word-wrap: break-word;">
       {t.heroTitle}
     </h1>
 
@@ -121,7 +118,7 @@
 
     <!-- CTAs -->
     <div class="flex flex-wrap items-center justify-center gap-4 mb-20">
-      <a href="#projects" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-black text-sm transition-transform hover:scale-105" style="
+      <a href="#projects" data-cuelume-press="pulse" data-cuelume-release="release" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-black text-sm transition-transform hover:scale-105" style="
         font-family: 'Outfit', sans-serif;
         font-weight: 700;
         background: var(--c-fire);
@@ -132,7 +129,7 @@
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
       </a>
-      <a href="#contact" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:border-white/30" style="
+      <a href="#contact" data-cuelume-press="pulse" data-cuelume-release="release" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:border-white/30" style="
         font-family: 'Outfit', sans-serif;
         font-weight: 700;
         color: var(--c-text);
@@ -141,7 +138,7 @@
       ">
         {t.contactMe}
       </a>
-      <a href={locale === 'en' ? "/cv-en.pdf" : "/cv-es.pdf"} target="_blank" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:border-white/30 flex items-center gap-2" style="
+      <a href={locale === 'en' ? "/cv-en.pdf" : "/cv-es.pdf"} data-cuelume-press="pulse" data-cuelume-release="release" target="_blank" class="hero-cta opacity-0 px-8 py-4 rounded-full font-semibold text-sm transition-all hover:border-white/30 flex items-center gap-2" style="
         font-family: 'Outfit', sans-serif;
         font-weight: 700;
         color: var(--c-text);
@@ -163,7 +160,7 @@
         { val: t.heroMetricThree, label: t.heroMetricThreeLabel }
       ] as metric}
         <div class="hero-metric opacity-0 text-center">
-          <div class="text-2xl font-bold mb-1" style="font-family: 'Syncopate', sans-serif; text-transform: uppercase; color: var(--c-fire)">
+          <div class="text-2xl font-bold mb-1 display-type" style="text-transform: uppercase; color: var(--c-fire)">
             {metric.val}
           </div>
           <div class="text-xs" style="font-family: 'Outfit', sans-serif; color:var(--c-muted); letter-spacing:0.08em; text-transform:uppercase">

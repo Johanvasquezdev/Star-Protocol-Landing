@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/layout/Navbar.svelte';
+import AudioExperience from '../components/layout/AudioExperience.svelte';
 import GlobalBackground from '../components/layout/GlobalBackground.svelte';
 import HeroSection from '../components/sections/HeroSection.svelte';
 import AboutSection from '../components/sections/AboutSection.svelte';
@@ -20,6 +21,7 @@ const locale = 'es';
 >
 	<GlobalBackground client:only="svelte" />
 	<Navbar client:load locale={locale} />
+	<AudioExperience client:load locale={locale} />
 	<main>
 		<HeroSection client:load locale={locale} />
 		<AboutSection client:visible locale={locale} />
