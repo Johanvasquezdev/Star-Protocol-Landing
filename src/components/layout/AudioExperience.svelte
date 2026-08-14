@@ -38,102 +38,28 @@
   let supported = true;
   let volume = 0.42;
 
-  let audioContext: AudioContext | null = null;
-  let masterGain: GainNode | null = null;
-  let musicGain: GainNode | null = null;
-  let musicTimer: number | null = null;
-  let chordIndex = 0;
-
-  const chords = [
-    [130.81, 196, 261.63, 329.63],
-    [146.83, 220, 293.66, 369.99],
-    [110, 164.81, 220, 277.18],
-    [123.47, 185, 246.94, 311.13]
-  ];
-
-  function getAudioContext() {
-    const AudioContextConstructor = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-    if (!AudioContextConstructor) return null;
-    return new AudioContextConstructor();
-  }
-
-  function ensureAudioGraph() {
-    if (audioContext && masterGain && musicGain) return audioContext;
-
-    const context = getAudioContext();
-    if (!context) {
-      supported = false;
-      return null;
-    }
-
-    const compressor = context.createDynamicsCompressor();
-    compressor.threshold.value = -26;
-    compressor.knee.value = 18;
-    compressor.ratio.value = 8;
-    compressor.attack.value = 0.003;
-    compressor.release.value = 0.25;
-
-    masterGain = context.createGain();
-    musicGain = context.createGain();
-    musicGain.gain.value = 0.42;
-    masterGain.gain.value = muted ? 0 : volume * 0.42;
-
-    musicGain.connect(masterGain);
-    masterGain.connect(compressor);
-    compressor.connect(context.destination);
-    audioContext = context;
-
-    return context;
-  }
-
-  function playAmbientChord() {
-    if (!audioContext || !musicGain || !active) return;
-
-    const startAt = audioContext.currentTime + 0.04;
-    const chord = chords[chordIndex % chords.length];
-    chordIndex += 1;
-
-    chord.forEach((frequency, index) => {
-      const oscillator = audioContext!.createOscillator();
-      const gain = audioContext!.createGain();
-      const peak = index === 0 ? 0.035 : index === 3 ? 0.014 : 0.022;
-
-      oscillator.type = index === 0 ? 'triangle' : 'sine';
-      oscillator.detune.value = index === 2 ? -3 : index === 3 ? 4 : 0;
-      oscillator.frequency.setValueAtTime(frequency, startAt);
-      gain.gain.setValueAtTime(0.0001, startAt);
-      gain.gain.exponentialRampToValueAtTime(peak, startAt + 1.4);
-      gain.gain.exponentialRampToValueAtTime(0.0001, startAt + 5.3);
-      oscillator.connect(gain);
-      gain.connect(musicGain!);
-      oscillator.start(startAt);
-      oscillator.stop(startAt + 5.5);
-    });
-  }
+  let audioElement: HTMLAudioElement;
 
   function startMusic() {
-    if (musicTimer !== null) return;
-    playAmbientChord();
-    musicTimer = window.setInterval(playAmbientChord, 4200);
+    if (audioElement) {
+      audioElement.play().catch(() => {});
+    }
   }
 
   function stopMusic() {
-    if (musicTimer !== null) {
-      window.clearInterval(musicTimer);
-      musicTimer = null;
+    if (audioElement) {
+      audioElement.pause();
     }
   }
 
   async function toggleAudio() {
-    const context = ensureAudioGraph();
-    if (!context || !masterGain) return;
-
-    if (context.state === 'suspended') await context.resume();
     active = !active;
 
     if (active) {
       setEnabled(!muted);
-      setVolume(volume);
+      if (audioElement) {
+        audioElement.volume = muted ? 0 : volume * 0.6;
+      }
       startMusic();
       if (!muted) playCue('arrival', { volume: 0.35 });
     } else {
@@ -145,17 +71,16 @@
   function toggleMute() {
     muted = !muted;
     setEnabled(active && !muted);
-    if (masterGain && audioContext) {
-      masterGain.gain.cancelScheduledValues(audioContext.currentTime);
-      masterGain.gain.setTargetAtTime(muted ? 0 : volume * 0.42, audioContext.currentTime, 0.08);
+    if (audioElement) {
+      audioElement.volume = muted ? 0 : volume * 0.6;
     }
   }
 
   function updateVolume(event: Event) {
     volume = Number((event.currentTarget as HTMLInputElement).value);
     setVolume(volume);
-    if (masterGain && audioContext && !muted) {
-      masterGain.gain.setTargetAtTime(volume * 0.42, audioContext.currentTime, 0.08);
+    if (audioElement && !muted) {
+      audioElement.volume = volume * 0.6;
     }
   }
 
@@ -195,9 +120,10 @@
     }
     stopMusic();
     setEnabled(false);
-    audioContext?.close();
   });
 </script>
+
+<audio bind:this={audioElement} src="/audio/ambient.mp3" loop preload="auto" class="hidden"></audio>
 
 {#if supported}
   <div class="audio-experience fixed bottom-5 right-5 z-50" aria-label={labels.title}>
