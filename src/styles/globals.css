@@ -142,8 +142,9 @@
 
   @media (max-width: 640px) {
     .hero-title {
-      max-width: 10ch;
-      letter-spacing: -0.075em;
+      max-width: 100%;
+      font-size: clamp(1.75rem, 8.5vw, 3.5rem);
+      letter-spacing: -0.05em;
     }
   }
   
