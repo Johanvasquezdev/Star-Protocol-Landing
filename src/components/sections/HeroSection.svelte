@@ -14,6 +14,7 @@
     if (titleEl) {
       const words = titleEl.textContent!.trim().split(' ');
       titleEl.innerHTML = words.map((w, index) => `<span class="hero-word inline-block max-w-full overflow-hidden py-2 -my-2 ${index === 0 ? 'hero-word-accent' : ''}"><span class="hero-word-inner inline-block max-w-full break-words">${w}</span></span>`).join(' ');
+      titleEl.classList.remove('opacity-0');
 
       // Title
 
@@ -104,7 +105,7 @@
   <div class="container mx-auto px-6 max-w-5xl relative z-10 text-center">
 
     <!-- Main title — word-by-word reveal -->
-    <h1 class="hero-title mb-8 mx-auto text-white uppercase" style="word-wrap: break-word;">
+    <h1 class="hero-title opacity-0 mb-8 mx-auto text-white uppercase" style="word-wrap: break-word;">
       {t.heroTitle}
     </h1>
 
