@@ -1,7 +1,246 @@
-12:22:54 AM [vite-plugin-svelte] no Svelte config found at C:/Users/johan/OneDrive/Documentos/jvasquezdevlanding - using default configuration.
+1:59:04 AM [vite-plugin-svelte] no Svelte config found at C:/Users/johan/OneDrive/Documentos/jvasquezdevlanding - using default configuration.
 {"message":"connected.","label":"vite","level":"info"}
-{"message":"Generated 3ms","label":"types","level":"info"}
+{"message":"Generated 2ms","label":"types","level":"info"}
 {"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
 {"message":"Port 4321 is in use, trying another one...","label":"vite","level":"info"}
-{"message":" astro  v7.1.3 ready in 5307 ms\n┃ Local    http://localhost:4322/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":" astro  v7.1.3 ready in 5151 ms\n┃ Local    http://127.0.0.1:4322/","label":"SKIP_FORMAT","level":"info"}
 {"message":"watching for file changes...","label":null,"level":"info"}
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+1:59:16 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+1:59:16 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+1:59:16 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"[200] / 75ms","label":null,"level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+1:59:24 AM [vite-plugin-svelte] src/components/layout/GlobalBackground.svelte:205:0 Self-closing HTML tags for non-void elements are ambiguous — use `<canvas ...></canvas>` rather than `<canvas ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"dependency optimized: lenis","label":"vite","level":"info"}
+{"message":"optimized dependencies changed. reloading","label":"vite","level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"[Unhandled rejection] TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/node_modules/.vite/deps/astro-C3dVLYN0.js?v=6e8a7ecc\n","label":"vite","level":"error"}
+1:59:26 AM [vite-plugin-svelte] src/components/layout/GlobalBackground.svelte:205:0 Self-closing HTML tags for non-void elements are ambiguous — use `<canvas ...></canvas>` rather than `<canvas ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:01:42 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:01:42 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:01:49 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/components/sections/TechStackSection.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"[200] / 28ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///C:/Users/johan/OneDrive/Documentos/jvasquezdevlanding/node_modules/astro/node_modules/vite/dist/node/chunks/node.js:20113:31)","label":"vite","level":"error"}
+{"message":"[200] / 66ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"[200] / 41ms","label":null,"level":"info"}
+{"message":"[200] / 41ms","label":null,"level":"info"}
+{"message":"[200] / 41ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"window is not defined\n  Hint:\n    Browser APIs are not available on the server.\n    \n    If the code is in a framework component, try to access these objects after rendering using lifecycle methods or use a `client:only` directive to make the component exclusively run on the client.\n    \n    See https://docs.astro.build/en/guides/troubleshooting/#document-or-window-is-not-defined for more information.\n    \t\t\n  Stack trace:\n    at eval (C:\\Users\\johan\\OneDrive\\Documentos\\jvasquezdevlanding\\src\\components\\layout\\AudioExperience.svelte:219:5)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+{"message":"[200] / 52ms","label":null,"level":"info"}
+{"message":"[200] / 52ms","label":null,"level":"info"}
+{"message":"[200] / 52ms","label":null,"level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"dependencies optimized: lucide-svelte/icons/pause, lucide-svelte/icons/play, lucide-svelte/icons/volume-2, lucide-svelte/icons/volume-x","label":"vite","level":"info"}
+{"message":"optimized dependencies changed. reloading","label":"vite","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+2:08:00 AM [vite-plugin-svelte] src/components/layout/GlobalBackground.svelte:205:0 Self-closing HTML tags for non-void elements are ambiguous — use `<canvas ...></canvas>` rather than `<canvas ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+2:09:43 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:09:43 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"[console.error] [astro-island] Error hydrating /src/components/sections/AboutSection.svelte TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/src/components/sections/AboutSection.svelte?astro-retry=1786342183492","label":"vite","level":"error"}
+{"message":"[console.error] [astro-island] Error hydrating /src/components/sections/CertificationsSection.svelte TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/src/components/sections/CertificationsSection.svelte?astro-retry=1786342183581","label":"vite","level":"error"}
+{"message":"[console.error] [astro-island] Error hydrating /src/components/sections/TechStackSection.svelte TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/src/components/sections/TechStackSection.svelte?astro-retry=1786342183731","label":"vite","level":"error"}
+{"message":"[console.error] [astro-island] Error hydrating /src/components/sections/ProjectsSection.svelte TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/src/components/sections/ProjectsSection.svelte?astro-retry=1786342184047","label":"vite","level":"error"}
+{"message":"[console.error] [astro-island] Error hydrating /src/components/sections/ContactSection.svelte TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/src/components/sections/ContactSection.svelte?astro-retry=1786342187674","label":"vite","level":"error"}
+2:09:52 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+2:10:20 AM [vite-plugin-svelte] no Svelte config found at C:/Users/johan/OneDrive/Documentos/jvasquezdevlanding - using default configuration.
+2:10:20 AM [vite-plugin-svelte] no Svelte config found at C:/Users/johan/OneDrive/Documentos/jvasquezdevlanding - using default configuration.
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because lockfile has changed","label":"vite","level":"info"}
+{"message":"server restarted.","label":"vite","level":"info"}
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+2:10:25 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:10:25 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:10:25 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"[200] / 52ms","label":null,"level":"info"}
+2:10:25 AM [vite-plugin-svelte] src/components/layout/GlobalBackground.svelte:205:0 Self-closing HTML tags for non-void elements are ambiguous — use `<canvas ...></canvas>` rather than `<canvas ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+{"message":"dependency optimized: lenis","label":"vite","level":"info"}
+{"message":"optimized dependencies changed. reloading","label":"vite","level":"info"}
+{"message":"[Unhandled rejection] TypeError: Failed to fetch dynamically imported module: http://127.0.0.1:4322/node_modules/.vite/deps/astro-C3dVLYN0.js?v=8fa107f6\n","label":"vite","level":"error"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+2:10:27 AM [vite-plugin-svelte] src/components/layout/GlobalBackground.svelte:205:0 Self-closing HTML tags for non-void elements are ambiguous — use `<canvas ...></canvas>` rather than `<canvas ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:10:31 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:10:31 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:10:33 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"/src/components/layout/AudioExperience.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"[optimizer] bundling dependencies...","label":"vite","level":"info"}
+{"message":"dependency optimized: cuelume","label":"vite","level":"info"}
+{"message":"/src/components/layout/Navbar.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+2:13:14 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:13:14 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"/src/components/sections/HeroSection.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+2:13:14 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:13:14 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"/src/components/ui/ProjectCard.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/components/sections/ProjectsSection.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+2:13:14 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:13:14 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:14:00 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"/src/components/sections/ContactSection.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/components/layout/Footer.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+2:14:00 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css, /src/components/sections/ProjectsSection.svelte","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+2:21:48 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:21:48 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"/src/components/ui/ProjectCard.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+2:21:48 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:21:48 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+2:23:20 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:41:0 `<div>` with a mousemove or mouseleave handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+2:23:20 AM [vite-plugin-svelte] src/components/ui/ProjectCard.svelte:57:4 Self-closing HTML tags for non-void elements are ambiguous — use `<div ...></div>` rather than `<div ... />`
+https://svelte.dev/e/element_invalid_self_closing_tag
+2:23:20 AM [vite-plugin-svelte] src/components/layout/Footer.svelte:7:13 Component has unused export property 'locale'. If it is for external reference only, please consider using `export const locale`
+https://svelte.dev/e/export_let_unused
+{"message":"[200] /es 40ms","label":null,"level":"info"}
+{"message":"/src/components/sections/OrbitHeroObject.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"/src/styles/globals.css, /src/components/layout/Navbar.svelte, /src/components/sections/HeroSection.svelte, /src/components/sections/AboutSection.svelte, /src/components/sections/CertificationsSection.svelte, /src/components/sections/TechStackSection.svelte, /src/components/sections/ProjectsSection.svelte, /src/components/sections/ContactSection.svelte","label":"watch","level":"info"}
+{"message":"/src/components/sections/AboutSection.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css, /src/components/layout/Navbar.svelte, /src/components/sections/HeroSection.svelte, /src/components/sections/AboutSection.svelte, /src/components/sections/CertificationsSection.svelte, /src/components/sections/TechStackSection.svelte, /src/components/sections/ProjectsSection.svelte, /src/components/sections/ContactSection.svelte","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"[200] / 19ms","label":null,"level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[200] /es 9ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"/src/components/sections/OrbitHeroObject.svelte, /src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}
+{"message":"/src/styles/globals.css","label":"watch","level":"info"}

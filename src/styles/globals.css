@@ -20,8 +20,8 @@
 
   /* Type roles: expressive display, editorial accent, readable interface copy. */
   --font-body: 'Outfit', sans-serif;
-  --font-display: 'Unbounded', sans-serif;
-  --font-editorial: 'Bodoni Moda', Georgia, serif;
+  --font-display: 'Syncopate', sans-serif;
+  --font-editorial: 'Syne', sans-serif;
 
   /* Core palette */
   --c-void: var(--color-void);
@@ -137,10 +137,7 @@
 
   .hero-word-accent {
     color: var(--c-fire);
-    font-family: var(--font-editorial);
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: -0.1em;
+    font-weight: 700;
   }
 
   @media (max-width: 640px) {
