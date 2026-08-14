@@ -159,13 +159,38 @@
     }
   }
 
+  const handleGlobalInteract = () => {
+    if (!active && supported) {
+      toggleAudio();
+    }
+    document.removeEventListener('click', handleGlobalInteract);
+    document.removeEventListener('keydown', handleGlobalInteract);
+  };
+
+  const handleGlobalClick = (e: MouseEvent) => {
+    if (!active || muted) return;
+    const target = e.target as HTMLElement;
+    const isInteractive = target.closest('a, button, input[type="submit"], input[type="button"]');
+    
+    if (isInteractive && !isInteractive.hasAttribute('data-cuelume-press') && !isInteractive.hasAttribute('data-audio-silent')) {
+      playCue('pulse', { volume: 0.15 }); 
+    }
+  };
+
   onMount(() => {
     setEnabled(false);
     setVolume(volume);
     bind();
+    
+    document.addEventListener('click', handleGlobalInteract, { once: true });
+    document.addEventListener('keydown', handleGlobalInteract, { once: true });
+    document.addEventListener('click', handleGlobalClick);
   });
 
   onDestroy(() => {
+    document.removeEventListener('click', handleGlobalInteract);
+    document.removeEventListener('keydown', handleGlobalInteract);
+    document.removeEventListener('click', handleGlobalClick);
     stopMusic();
     setEnabled(false);
     audioContext?.close();
