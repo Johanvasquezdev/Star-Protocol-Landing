@@ -188,9 +188,11 @@
   });
 
   onDestroy(() => {
-    document.removeEventListener('click', handleGlobalInteract);
-    document.removeEventListener('keydown', handleGlobalInteract);
-    document.removeEventListener('click', handleGlobalClick);
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('click', handleGlobalInteract);
+      document.removeEventListener('keydown', handleGlobalInteract);
+      document.removeEventListener('click', handleGlobalClick);
+    }
     stopMusic();
     setEnabled(false);
     audioContext?.close();
